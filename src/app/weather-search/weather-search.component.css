@@ -1,0 +1,61 @@
+.vh-100 {
+  height: 100vh;
+}
+
+.card {
+  border: none;
+  border-radius: 1rem;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  padding: 20px;
+}
+
+h2 {
+  font-family: 'Arial', sans-serif;
+  font-weight: bold;
+  color: #333;
+}
+
+.input-group {
+  margin-bottom: 30px;
+}
+
+.input-group .form-control {
+  border-top-left-radius: 1rem;
+  border-bottom-left-radius: 1rem;
+}
+
+.input-group .btn {
+  border-top-right-radius: 1rem;
+  border-bottom-right-radius: 1rem;
+}
+
+.weather-info h3 {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.weather-info p {
+  font-size: 1.2rem;
+  margin: 5px 0;
+}
+
+.weather-info .weather-icon {
+  width: 80px;
+  height: 80px;
+}
+
+.weather-info .temperature {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #007bff;
+}
+
+.weather-info .humidity {
+  font-size: 1rem;
+  color: #555;
+}
+
+.text-danger {
+  margin-top: 10px;
+}

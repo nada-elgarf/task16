@@ -1,0 +1,25 @@
+<div class="d-flex align-items-center justify-content-center vh-100">
+  <div class="col-md-8 col-lg-6">
+    <div class="card shadow-lg p-3 mb-5 bg-white rounded">
+      <h2 class="text-center mb-4">Weather App</h2>
+      <div class="input-group mb-4">
+        <input type="text" class="form-control form-control-lg" placeholder="Enter city" [(ngModel)]="city">
+        <div class="input-group-append">
+          <button class="btn btn-primary btn-lg" type="button" (click)="searchWeather()">Search</button>
+        </div>
+      </div>
+      <div *ngIf="weatherData" @fadeIn>
+        <div class="weather-info text-center">
+          <h3>{{ weatherData.location.name }}</h3>
+          <p>{{ weatherData.current.condition.text }}</p>
+          <img [src]="weatherData.current.condition.icon" alt="Weather icon" class="weather-icon mb-3">
+          <p class="temperature">{{ weatherData.current.temp_c }} °C</p>
+          <p class="humidity">Humidity: {{ weatherData.current.humidity }} %</p>
+        </div>
+      </div>
+      <div *ngIf="errorMessage" class="text-danger text-center">
+        {{ errorMessage }}
+      </div>
+    </div>
+  </div>
+</div>
